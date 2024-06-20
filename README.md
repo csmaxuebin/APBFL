@@ -1,9 +1,10 @@
-# This code is the source code implementation for the paper "AdaDP-CFL: Cluster Federated Learning with Adaptive Clipping Threshold Differential Privacy."
+# This code is the source code implementation for the paper "ADP-PFL: Differential Privacy Federated Learning Based on
+ Privacy Budget Allocation and Sparsification."
 
 
 
 ## Abstract
-![输入图片说明](https://github.com/csmaxuebin/PACFL/blob/main/PACFL/pic/1.png)
+![输入图片说明](https://github.com/csmaxuebin/APBFL/blob/main/PACFL/pic/1.png)
 Federated learning is a distributed machine learning method that allows multiple clients to collaborate to train models. Since the data is still stored locally, this method effectively protects the privacy of client information. Nevertheless, in today's context, federated learning still faces the risk of privacy leakage. Differential privacy techniques are widely used in federated learning to protect client privacy, where the size of the privacy budget directly affects the utility of the model. This study does not fully consider different privacy requirements, because client parameters in different communication rounds will bring different privacy leakage risks. To address these challenges, we propose a differential privacy federated learning algorithm based on privacy budget allocation and sparsification, called ADP-PFL. This method introduces an adaptive privacy budget allocation mechanism, which dynamically allocates privacy budgets to clients in different communication rounds according to the quantified privacy leakage risk, providing adaptive privacy protection. At the same time, model pruning reduces the dimension of parameters to reduce sensitivity, effectively reducing the amount of noise added after applying differential privacy. Experimental results show that our algorithm outperforms the existing state-of-the-art algorithms in terms of accuracy and effectively balances privacy protection and model practicality.
 
 
@@ -63,10 +64,10 @@ The images showcase model performance with varying privacy budgets across four d
 3. **Figure 5**: Compares different DP sparsification strategies. The proposed method ("Ours") typically outperforms or matches other methods, illustrating its effectiveness.
 
 4. **Figure 6**: Illustrates accuracy progression across training rounds under different sparsification levels. While sparsification initially delays accuracy gains, all methods eventually converge to similar levels, showing that sparsification can reduce data transmission costs without greatly affecting final accuracy.
-![输入图片说明](https://github.com/csmaxuebin/PACFL/blob/main/PACFL/pic/2.png)
-![输入图片说明](https://github.com/csmaxuebin/PACFL/blob/main/PACFL/pic/3.png)
-![输入图片说明](https://github.com/csmaxuebin/PACFL/blob/main/PACFL/pic/4.png)
-![输入图片说明](https://github.com/csmaxuebin/PACFL/blob/main/PACFL/pic/5.png)
+![输入图片说明](https://github.com/csmaxuebin/APBFL/blob/main/PACFL/pic/2.png)
+![输入图片说明](https://github.com/csmaxuebin/APBFL/blob/main/PACFL/pic/3.png)
+![输入图片说明](https://github.com/csmaxuebin/APBFL/blob/main/PACFL/pic/4.png)
+![输入图片说明](https://github.com/csmaxuebin/APBFL/blob/main/PACFL/pic/5.png)
 
 
 
